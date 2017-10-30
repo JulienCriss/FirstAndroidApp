@@ -1,2 +1,18 @@
-# FirstAndroidApp
-Build a Single Screen App - Udacity Tutorial Project (Link: https://classroom.udacity.com/courses/ud834/lessons/46e6b33a-0d6e-433d-9ac4-701a2156d584/concepts/438e4ee4-c6a2-40d4-9c9b-762124e52a2d)
+# Build a Single Screen App
+
+## Project Overview
+
+### **Requirements:**
+
+Your design must include:
+
+Business name
+* At least one photo representing the business
+* Two or more other pieces of information, such as:
+* Contact information for the business (eg phone number, email address, website)
+* * Address of the Business
+* * Description of business
+* * Hours of operation
+
+### **Implementation Result:**
+![Result](https://github.com/JulienCriss/FirstAndroidApp/blob/master/final_result.png)
