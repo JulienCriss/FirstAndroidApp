@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Cafeneaua Piața Unirii</string>
+    <string name="image_rep">Image Location</string>
+    <string name="rating_score">4.3</string>
+    <string name="recenzii">(239 reviews)</string>
+    <string name="location_name">Piața Unirii 6, Iași 700055</string>
+    <string name="phone_no">0743 663 903</string>
+    <string name="about_cafe">Cafeneaua Piața Unirii is located in the center of Iasi, as its name says, in an area that remembers many events that mark the history of the city. With its historic location and modern and warm setting, the café manages to combine both its location and the quality of its services in an irreproachable way.</string>
+    <string name="time_info">Monday - Sunday: 08:00 - last customer</string>
+</resources>

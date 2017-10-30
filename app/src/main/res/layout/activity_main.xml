@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.cafeapp.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--Image Location-->
+        <ImageView
+            android:id="@+id/location_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:contentDescription="@string/image_rep"
+            android:scaleType="centerCrop"
+            android:src="@drawable/cafe_img" />
+
+        <!--Title Bar-->
+        <TextView
+            android:id="@+id/cafe_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/location_image"
+            android:background="@color/colorPrimary"
+            android:padding="16dp"
+            android:text="@string/app_name"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <!--Rating Bar-->
+        <LinearLayout
+            android:id="@+id/rating_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cafe_name"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <RatingBar
+                android:id="@+id/rating_bar"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:paddingRight="8dp"
+                android:rating="@string/rating_score" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="8dp"
+                android:text="@string/rating_score" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/recenzii" />
+        </LinearLayout>
+
+        <!--Contact Info-->
+        <RelativeLayout
+            android:id="@+id/info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rating_layout"
+            android:paddingLeft="16dp">
+
+            <ImageView
+                android:id="@+id/location_icon"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/location_icon" />
+
+            <TextView
+                android:id="@+id/location_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_toRightOf="@id/location_icon"
+                android:text="@string/location_name"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:id="@+id/phone_icon"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_below="@id/location_icon"
+                android:layout_marginBottom="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/phone_icon" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/location_name"
+                android:layout_toRightOf="@id/location_icon"
+                android:text="@string/phone_no"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:id="@+id/clock_icon"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_below="@id/phone_icon"
+                android:layout_marginBottom="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/clock_icon" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/phone_icon"
+                android:layout_toRightOf="@id/clock_icon"
+                android:text="@string/time_info"
+                android:textSize="17sp" />
+
+        </RelativeLayout>
+
+        <!--Add separator-->
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/info"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/darker_gray" />
+
+        <!--About Cafe-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/info"
+            android:padding="16dp"
+            android:text="@string/about_cafe"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="18sp" />
+    </RelativeLayout>
+</ScrollView>
+
